@@ -12,6 +12,7 @@
 		E83C1C8A1DB4CE2E00CA7221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E83C1C881DB4CE2E00CA7221 /* Main.storyboard */; };
 		E83C1C8C1DB4CE2E00CA7221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E83C1C8B1DB4CE2E00CA7221 /* Assets.xcassets */; };
 		E83C1C8F1DB4CE2E00CA7221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E83C1C8D1DB4CE2E00CA7221 /* LaunchScreen.storyboard */; };
+		E83C1C971DB5144400CA7221 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83C1C961DB5144400CA7221 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E83C1C8B1DB4CE2E00CA7221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E83C1C8E1DB4CE2E00CA7221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E83C1C901DB4CE2E00CA7221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E83C1C961DB5144400CA7221 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				E83C1C841DB4CE2E00CA7221 /* AppDelegate.swift */,
 				E83C1C861DB4CE2E00CA7221 /* ViewController.swift */,
+				E83C1C961DB5144400CA7221 /* SignInViewController.swift */,
 				E83C1C881DB4CE2E00CA7221 /* Main.storyboard */,
 				E83C1C8B1DB4CE2E00CA7221 /* Assets.xcassets */,
 				E83C1C8D1DB4CE2E00CA7221 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			files = (
 				E83C1C871DB4CE2E00CA7221 /* ViewController.swift in Sources */,
 				E83C1C851DB4CE2E00CA7221 /* AppDelegate.swift in Sources */,
+				E83C1C971DB5144400CA7221 /* SignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +303,7 @@
 				E83C1C951DB4CE2E00CA7221 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
