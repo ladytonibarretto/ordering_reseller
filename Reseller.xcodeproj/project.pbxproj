@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E259693C1DB90CF600CCF7E8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E259693B1DB90CF600CCF7E8 /* MenuViewController.swift */; };
+		E2BEB4D21DB90E8A00F8764A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BEB4D11DB90E8A00F8764A /* BaseViewController.swift */; };
+		E2BEB4D41DB90EFE00F8764A /* ResellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BEB4D31DB90EFE00F8764A /* ResellerViewController.swift */; };
+		E2BEB4D61DB90F9A00F8764A /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BEB4D51DB90F9A00F8764A /* ShoppingCartViewController.swift */; };
 		E83C1C851DB4CE2E00CA7221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83C1C841DB4CE2E00CA7221 /* AppDelegate.swift */; };
-		E83C1C871DB4CE2E00CA7221 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83C1C861DB4CE2E00CA7221 /* ViewController.swift */; };
 		E83C1C8A1DB4CE2E00CA7221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E83C1C881DB4CE2E00CA7221 /* Main.storyboard */; };
 		E83C1C8C1DB4CE2E00CA7221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E83C1C8B1DB4CE2E00CA7221 /* Assets.xcassets */; };
 		E83C1C8F1DB4CE2E00CA7221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E83C1C8D1DB4CE2E00CA7221 /* LaunchScreen.storyboard */; };
@@ -18,9 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E259693B1DB90CF600CCF7E8 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		E2BEB4D11DB90E8A00F8764A /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E2BEB4D31DB90EFE00F8764A /* ResellerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResellerViewController.swift; sourceTree = "<group>"; };
+		E2BEB4D51DB90F9A00F8764A /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
 		E83C1C811DB4CE2E00CA7221 /* Reseller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reseller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E83C1C841DB4CE2E00CA7221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E83C1C861DB4CE2E00CA7221 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E83C1C891DB4CE2E00CA7221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E83C1C8B1DB4CE2E00CA7221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E83C1C8E1DB4CE2E00CA7221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,8 +67,11 @@
 			isa = PBXGroup;
 			children = (
 				E83C1C841DB4CE2E00CA7221 /* AppDelegate.swift */,
-				E83C1C861DB4CE2E00CA7221 /* ViewController.swift */,
+				E259693B1DB90CF600CCF7E8 /* MenuViewController.swift */,
+				E2BEB4D11DB90E8A00F8764A /* BaseViewController.swift */,
 				E83C1C961DB5144400CA7221 /* SignInViewController.swift */,
+				E2BEB4D31DB90EFE00F8764A /* ResellerViewController.swift */,
+				E2BEB4D51DB90F9A00F8764A /* ShoppingCartViewController.swift */,
 				E8FBDAB31DB64E57008D3C6F /* NewAccountViewController.swift */,
 				E8FBDAB11DB64B6D008D3C6F /* ShopViewController.swift */,
 				E83C1C881DB4CE2E00CA7221 /* Main.storyboard */,
@@ -146,9 +155,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8FBDAB21DB64B6D008D3C6F /* ShopViewController.swift in Sources */,
-				E83C1C871DB4CE2E00CA7221 /* ViewController.swift in Sources */,
+				E259693C1DB90CF600CCF7E8 /* MenuViewController.swift in Sources */,
+				E2BEB4D61DB90F9A00F8764A /* ShoppingCartViewController.swift in Sources */,
 				E83C1C851DB4CE2E00CA7221 /* AppDelegate.swift in Sources */,
+				E2BEB4D41DB90EFE00F8764A /* ResellerViewController.swift in Sources */,
 				E8FBDAB41DB64E57008D3C6F /* NewAccountViewController.swift in Sources */,
+				E2BEB4D21DB90E8A00F8764A /* BaseViewController.swift in Sources */,
 				E83C1C971DB5144400CA7221 /* SignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +205,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -243,6 +256,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
