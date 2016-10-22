@@ -45,6 +45,9 @@
                                 <color key="backgroundColor" red="0.25483746410000002" green="0.59457395290000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.96928166370000002" green="1" blue="0.97385231839999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="LOGIN"/>
+                                <connections>
+                                    <segue destination="UGg-gG-rhT" kind="push" id="Dag-yH-UCL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="957-cr-ZiN">
                                 <frame key="frameInset" minX="113" minY="455" width="149" height="30"/>
@@ -59,14 +62,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Distributor Shop"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="U9T-qU-Oug">
-                                <frame key="frameInset" minX="164" minY="536" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="UGg-gG-rhT" kind="push" id="YdE-tB-OGU"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -74,18 +69,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bTj-cK-lfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-74.5" y="-1892.5"/>
+            <point key="canvasLocation" x="958.5" y="-1893.5"/>
         </scene>
         <!--ResellerView-->
         <scene sceneID="aCn-q1-IvP">
             <objects>
-                <viewController storyboardIdentifier="ResellerViewController" title="ResellerView" id="UGg-gG-rhT" customClass="ResellerViewController" customModule="Reseller" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResellerViewController" title="ResellerView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UGg-gG-rhT" customClass="ResellerViewController" customModule="Reseller" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5fY-sF-ybK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6CG-4I-aul">
-                                <frame key="frameInset" minX="166" minY="323" width="55" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Reseller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6CG-4I-aul">
+                                <frame key="frameInset" minX="100" minY="323" width="174" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -94,7 +89,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Reseller Page" id="XUH-OZ-y6x"/>
+                    <navigationItem key="navigationItem" title="Reseller" id="XUH-OZ-y6x"/>
                     <connections>
                         <segue destination="BB9-de-U41" kind="push" identifier="pushToPlay" id="165-SQ-fbJ"/>
                     </connections>
@@ -106,17 +101,26 @@
         <!--Shopping Cart-->
         <scene sceneID="Cuh-rg-rhw">
             <objects>
-                <viewController storyboardIdentifier="ShoppingCartViewController" id="BB9-de-U41" customClass="ShoppingCartViewController" customModule="Reseller" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShoppingCartViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BB9-de-U41" customClass="ShoppingCartViewController" customModule="Reseller" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZUB-bm-xSA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Shopping Cart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mv9-br-S3h">
+                                <frame key="frameInset" minX="100" minY="323" width="174" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Shopping Cart" id="R1s-O4-b1v"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g14-mx-hfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1525" y="-1860"/>
+            <point key="canvasLocation" x="2005" y="-2761"/>
         </scene>
         <!--NewAccount-->
         <scene sceneID="jfJ-Dn-80R">
@@ -211,17 +215,13 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Create New Account" id="PPG-qw-vsw">
-                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="d1b-wB-r6R">
-                            <connections>
-                                <segue destination="V2y-m5-TIU" kind="push" animates="NO" id="Is2-yy-iPB"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="d1b-wB-r6R"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="lVL-Mh-g3P"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wFf-ah-YQ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-44" y="-934"/>
+            <point key="canvasLocation" x="959" y="-1023"/>
         </scene>
         <!--NavAccount-->
         <scene sceneID="5Wv-k6-hfd">
@@ -239,7 +239,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lk1-9t-qkU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-624" y="-935"/>
+            <point key="canvasLocation" x="396" y="-1023"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="xrW-0D-CYG">
@@ -323,7 +323,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LMR-15-2aK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="993" y="-2761"/>
+            <point key="canvasLocation" x="959" y="-2784"/>
         </scene>
         <!--NavMain-->
         <scene sceneID="ZOV-YQ-RaA">
@@ -343,7 +343,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vz5-G2-84b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-661.5" y="-1892.5"/>
+            <point key="canvasLocation" x="396" y="-1894"/>
         </scene>
     </scenes>
     <resources>
@@ -356,7 +356,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="o2l-wA-MLC"/>
-        <segue reference="jkQ-AY-swS"/>
+        <segue reference="Dag-yH-UCL"/>
+        <segue reference="08a-kF-ne7"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -44,6 +44,8 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
     func openViewControllerBasedOnIdentifier(_ strIdentifier:String){
         let destViewController : UIViewController = self.storyboard!.instantiateViewController(withIdentifier: strIdentifier)
         
+        print("identifierrrr")
+        print(strIdentifier)
         let topViewController : UIViewController = self.navigationController!.topViewController!
         
         if (topViewController.restorationIdentifier! == destViewController.restorationIdentifier!){
