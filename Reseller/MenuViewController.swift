@@ -57,9 +57,10 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func updateArrayMenuOptions(){
-        arrayMenuOptions.append(["title":"Reseller", "icon":"HomeIcon"])
+        arrayMenuOptions.append(["title":"Reseller", "icon":"CameraIcon"])
         arrayMenuOptions.append(["title":"Shopping Cart", "icon":"PlayIcon"])
-        
+        arrayMenuOptions.append(["title":"Log Out", "icon":"HomeIcon"])
+
         tblMenuOptions.reloadData()
     }
     
@@ -78,7 +79,6 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
             self.view.frame = CGRect(x: -UIScreen.main.bounds.size.width, y: 0, width: UIScreen.main.bounds.size.width,height: UIScreen.main.bounds.size.height)
             self.view.layoutIfNeeded()
             self.view.backgroundColor = UIColor.clear
-            print("debuggggg")
             }, completion: { (finished) -> Void in
                 self.view.removeFromSuperview()
                 self.removeFromParentViewController()
@@ -98,10 +98,6 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         imgIcon.image = UIImage(named: arrayMenuOptions[indexPath.row]["icon"]!)
         lblTitle.text = arrayMenuOptions[indexPath.row]["title"]!
-        
-        print("%&%&%&")
-        
-        print(lblTitle.text)
         
         return cell
     }

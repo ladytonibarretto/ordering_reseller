@@ -15,6 +15,10 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -36,6 +40,12 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
             self.openViewControllerBasedOnIdentifier("ShoppingCartViewController")
             
             break
+        case 2:
+            print("Log In\n", terminator: "")
+            
+            self.openViewControllerBasedOnIdentifier("SignInViewController")
+            
+            break
         default:
             print("default\n", terminator: "")
         }
@@ -44,8 +54,6 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
     func openViewControllerBasedOnIdentifier(_ strIdentifier:String){
         let destViewController : UIViewController = self.storyboard!.instantiateViewController(withIdentifier: strIdentifier)
         
-        print("identifierrrr")
-        print(strIdentifier)
         let topViewController : UIViewController = self.navigationController!.topViewController!
         
         if (topViewController.restorationIdentifier! == destViewController.restorationIdentifier!){
@@ -87,7 +95,6 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
     }
     
     func onSlideMenuButtonPressed(_ sender : UIButton){
-        print("DEBUGGGG", sender.tag)
         if (sender.tag == 10)
         {
             // To Hide Menu If it already there
@@ -116,8 +123,7 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         let menuVC : MenuViewController = self.storyboard!.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
         menuVC.btnMenu = sender
         menuVC.delegate = self
-        print("*****")
-        print(menuVC.btnMenu)
+      
         self.view.addSubview(menuVC.view)
         self.addChildViewController(menuVC)
         menuVC.view.layoutIfNeeded()

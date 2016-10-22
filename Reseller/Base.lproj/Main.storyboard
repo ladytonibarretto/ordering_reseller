@@ -9,7 +9,7 @@
         <!--SignIn-->
         <scene sceneID="QXa-8K-pkq">
             <objects>
-                <viewController title="SignIn" id="ZFn-kG-FWV" customClass="SingInViewController" customModule="Reseller" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="SignInViewController" storyboardIdentifier="SignInViewController" title="SignIn" id="ZFn-kG-FWV" customClass="SingInViewController" customModule="Reseller" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="dUV-qx-jsY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +91,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Reseller" id="XUH-OZ-y6x"/>
                     <connections>
-                        <segue destination="BB9-de-U41" kind="push" identifier="pushToPlay" id="165-SQ-fbJ"/>
+                        <segue destination="BB9-de-U41" kind="push" identifier="" id="165-SQ-fbJ"/>
+                        <segue destination="ZFn-kG-FWV" kind="push" id="LtG-Hg-hV8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4t6-HT-b1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -209,13 +210,20 @@
                                 <state key="normal" title="SUBMIT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="UGg-gG-rhT" kind="push" id="GTH-qu-dQc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Create New Account" id="PPG-qw-vsw">
-                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="d1b-wB-r6R"/>
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="d1b-wB-r6R">
+                            <connections>
+                                <segue destination="ZFn-kG-FWV" kind="push" id="FoH-BB-QEk"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="lVL-Mh-g3P"/>
                     </navigationItem>
                 </viewController>
@@ -356,7 +364,8 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Dag-yH-UCL"/>
+        <segue reference="GTH-qu-dQc"/>
         <segue reference="08a-kF-ne7"/>
+        <segue reference="FoH-BB-QEk"/>
     </inferredMetricsTieBreakers>
 </document>
