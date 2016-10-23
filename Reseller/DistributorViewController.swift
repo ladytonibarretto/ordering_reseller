@@ -8,18 +8,13 @@
 
 import UIKit
 
-class DistributorViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class DistributorViewController: UIViewController, UITableViewDataSource {
     
     /**
      *  Array to display menu options
      */
     
-    @IBOutlet weak var tblMenuOptions: UITableView!
-    /**
-     *  Transparent button to hide menu
-     */
-    
-    @IBOutlet weak var btnCloseMenuOverlay: UIButton!
+    @IBOutlet weak var distMenuOptions: UITableView!
     /**
      *  Array containing menu options
      */
@@ -33,10 +28,10 @@ class DistributorViewController: UIViewController, UITableViewDataSource, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tblMenuOptions.tableFooterView = UIView()
+        distMenuOptions.tableFooterView = UIView()
         // Do any additional setup after loading the view.
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -44,6 +39,7 @@ class DistributorViewController: UIViewController, UITableViewDataSource, UITabl
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
         updateArrayMenuOptions()
     }
     
@@ -52,7 +48,7 @@ class DistributorViewController: UIViewController, UITableViewDataSource, UITabl
         arrayMenuOptions.append(["title":"Shopping Cart", "icon":"PlayIcon"])
         arrayMenuOptions.append(["title":"Log Out", "icon":"HomeIcon"])
         
-        tblMenuOptions.reloadData()
+        distMenuOptions.reloadData()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -72,7 +68,7 @@ class DistributorViewController: UIViewController, UITableViewDataSource, UITabl
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    private func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let btn = UIButton(type: UIButtonType.custom)
         btn.tag = indexPath.row
     }

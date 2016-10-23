@@ -94,8 +94,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Reseller" id="XUH-OZ-y6x"/>
                     <connections>
-                        <segue destination="BB9-de-U41" kind="push" identifier="" id="165-SQ-fbJ"/>
-                        <segue destination="ZFn-kG-FWV" kind="push" id="LtG-Hg-hV8"/>
+                        <segue destination="BB9-de-U41" kind="push" identifier="pushToCart" id="165-SQ-fbJ"/>
+                        <segue destination="ZFn-kG-FWV" kind="push" identifier="pushToSignIn" id="LtG-Hg-hV8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4t6-HT-b1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -237,13 +237,13 @@
         <!--Distributor Shop-->
         <scene sceneID="vE7-PV-wOD">
             <objects>
-                <viewController title="Distributor Shop" id="f71-wU-cpc" sceneMemberID="viewController">
+                <viewController title="Distributor Shop" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f71-wU-cpc" customClass="DistributorViewController" customModule="Reseller" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="npe-KN-hJk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="54" sectionHeaderHeight="28" sectionFooterHeight="28" id="77l-cS-jcd">
-                                <frame key="frameInset" minY="62" width="375" height="632"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="54" sectionHeaderHeight="28" sectionFooterHeight="28" id="77l-cS-jcd" userLabel="Distributor Table">
+                                <frame key="frameInset" minY="20" width="375" height="674"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -269,11 +269,17 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="f71-wU-cpc" id="SIs-Bv-xV8"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Bgm-ld-UYd"/>
+                    <navigationItem key="navigationItem" title="Distributor Shop" id="Bgm-ld-UYd"/>
+                    <connections>
+                        <outlet property="DistMenuOptions" destination="77l-cS-jcd" id="x48-26-KOg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jF5-69-t7O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -282,7 +288,7 @@
         <!--NavAccount-->
         <scene sceneID="5Wv-k6-hfd">
             <objects>
-                <navigationController title="NavAccount" automaticallyAdjustsScrollViewInsets="NO" id="rAm-UD-CvC" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navAcctNavController" title="NavAccount" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rAm-UD-CvC" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FMl-c5-akt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -365,7 +371,7 @@
         <!--NavMenu-->
         <scene sceneID="8FK-zs-WwK">
             <objects>
-                <navigationController title="NavMenu" automaticallyAdjustsScrollViewInsets="NO" id="Flh-ai-fP9" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="drawerNavController" title="NavMenu" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Flh-ai-fP9" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Lxf-mr-ozr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -401,10 +407,10 @@
             </objects>
             <point key="canvasLocation" x="396" y="-1894"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Distributor Shop-->
         <scene sceneID="k4x-yj-pr2">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8uv-yF-TZu" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="distNavController" title="Distributor Shop" automaticallyAdjustsScrollViewInsets="NO" id="8uv-yF-TZu" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="q40-gO-as7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -430,9 +436,9 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Dag-yH-UCL"/>
-        <segue reference="FoH-BB-QEk"/>
-        <segue reference="08a-kF-ne7"/>
+        <segue reference="o2l-wA-MLC"/>
+        <segue reference="LtG-Hg-hV8"/>
+        <segue reference="jkQ-AY-swS"/>
         <segue reference="G91-qw-VxF"/>
     </inferredMetricsTieBreakers>
 </document>
