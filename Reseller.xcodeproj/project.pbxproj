@@ -17,7 +17,6 @@
 		E83C1C8C1DB4CE2E00CA7221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E83C1C8B1DB4CE2E00CA7221 /* Assets.xcassets */; };
 		E83C1C8F1DB4CE2E00CA7221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E83C1C8D1DB4CE2E00CA7221 /* LaunchScreen.storyboard */; };
 		E83C1C971DB5144400CA7221 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83C1C961DB5144400CA7221 /* SignInViewController.swift */; };
-		E8FBDAB21DB64B6D008D3C6F /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FBDAB11DB64B6D008D3C6F /* ShopViewController.swift */; };
 		E8FBDAB41DB64E57008D3C6F /* NewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FBDAB31DB64E57008D3C6F /* NewAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +33,6 @@
 		E83C1C8E1DB4CE2E00CA7221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E83C1C901DB4CE2E00CA7221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E83C1C961DB5144400CA7221 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		E8FBDAB11DB64B6D008D3C6F /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		E8FBDAB31DB64E57008D3C6F /* NewAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,6 +47,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E2BEB4D91DBCD9D200F8764A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2BEB4DA1DBCDA0000F8764A /* Reseller */,
+				E259693B1DB90CF600CCF7E8 /* MenuViewController.swift */,
+				E2BEB4D71DBBA72D00F8764A /* DistributorViewController.swift */,
+				E2BEB4D11DB90E8A00F8764A /* BaseViewController.swift */,
+				E83C1C961DB5144400CA7221 /* SignInViewController.swift */,
+				E2BEB4D31DB90EFE00F8764A /* ResellerViewController.swift */,
+				E2BEB4D51DB90F9A00F8764A /* ShoppingCartViewController.swift */,
+				E8FBDAB31DB64E57008D3C6F /* NewAccountViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E2BEB4DA1DBCDA0000F8764A /* Reseller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Reseller;
+			sourceTree = "<group>";
+		};
 		E83C1C781DB4CE2E00CA7221 = {
 			isa = PBXGroup;
 			children = (
@@ -68,15 +88,8 @@
 		E83C1C831DB4CE2E00CA7221 /* Reseller */ = {
 			isa = PBXGroup;
 			children = (
+				E2BEB4D91DBCD9D200F8764A /* Controller */,
 				E83C1C841DB4CE2E00CA7221 /* AppDelegate.swift */,
-				E259693B1DB90CF600CCF7E8 /* MenuViewController.swift */,
-				E2BEB4D71DBBA72D00F8764A /* DistributorViewController.swift */,
-				E2BEB4D11DB90E8A00F8764A /* BaseViewController.swift */,
-				E83C1C961DB5144400CA7221 /* SignInViewController.swift */,
-				E2BEB4D31DB90EFE00F8764A /* ResellerViewController.swift */,
-				E2BEB4D51DB90F9A00F8764A /* ShoppingCartViewController.swift */,
-				E8FBDAB31DB64E57008D3C6F /* NewAccountViewController.swift */,
-				E8FBDAB11DB64B6D008D3C6F /* ShopViewController.swift */,
 				E83C1C881DB4CE2E00CA7221 /* Main.storyboard */,
 				E83C1C8B1DB4CE2E00CA7221 /* Assets.xcassets */,
 				E83C1C8D1DB4CE2E00CA7221 /* LaunchScreen.storyboard */,
@@ -157,7 +170,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8FBDAB21DB64B6D008D3C6F /* ShopViewController.swift in Sources */,
 				E2BEB4D81DBBA72D00F8764A /* DistributorViewController.swift in Sources */,
 				E259693C1DB90CF600CCF7E8 /* MenuViewController.swift in Sources */,
 				E2BEB4D61DB90F9A00F8764A /* ShoppingCartViewController.swift in Sources */,

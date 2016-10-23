@@ -44,9 +44,12 @@ class DistributorViewController: UIViewController, UITableViewDataSource {
     }
     
     func updateArrayMenuOptions(){
-        arrayMenuOptions.append(["title":"Reseller", "icon":"CameraIcon"])
-        arrayMenuOptions.append(["title":"Shopping Cart", "icon":"PlayIcon"])
-        arrayMenuOptions.append(["title":"Log Out", "icon":"HomeIcon"])
+        arrayMenuOptions.append(["title":"Marlboro", "icon":"CameraIcon"])
+        arrayMenuOptions.append(["title":"Winston", "icon":"PlayIcon"])
+        arrayMenuOptions.append(["title":"Philips", "icon":"HomeIcon"])
+        arrayMenuOptions.append(["title":"Fortune", "icon":"CameraIcon"])
+        arrayMenuOptions.append(["title":"Chesterfields", "icon":"PlayIcon"])
+        arrayMenuOptions.append(["title":"Palm Mall", "icon":"HomeIcon"])
         
         distMenuOptions.reloadData()
     }

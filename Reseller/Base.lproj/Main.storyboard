@@ -183,9 +183,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_add_a_photo_grey600_48dp" id="1p1-tQ-WYF">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_add_a_photo_grey600_48dp" id="1p1-tQ-WYF">
                                 <frame key="frameInset" minX="16" minY="248" width="96" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="igI-dv-ra2" appends="YES" id="Hf0-KX-eGZ"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Permit Images" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OXr-2D-VHu">
                                 <frame key="frameInset" minX="16" minY="325" width="238" height="39"/>
@@ -222,15 +226,18 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Create New Account" id="PPG-qw-vsw">
-                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="d1b-wB-r6R">
-                            <connections>
-                                <segue destination="ZFn-kG-FWV" kind="push" id="FoH-BB-QEk"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="lVL-Mh-g3P"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="storeImg" destination="1p1-tQ-WYF" id="Teu-Yd-mu8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wFf-ah-YQ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="igI-dv-ra2">
+                    <connections>
+                        <action selector="tapDetected:" destination="pPS-Pc-fiJ" id="U7n-bK-LIw"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="959" y="-1023"/>
         </scene>
@@ -254,17 +261,17 @@
                                             <frame key="frameInset" width="375" height="53"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" tag="200" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="4NI-uc-uMz">
-                                                    <frame key="frameInset" minX="22" width="51" height="51"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="201" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OLT-tQ-UhJ">
-                                                    <frame key="frameInset" minX="93" minY="16" width="235" height="21"/>
+                                                    <frame key="frameInset" minX="63" minY="16" width="235" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" tag="200" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="4NI-uc-uMz">
+                                                    <frame key="frameInset" minX="15" minY="7" width="39" height="39"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -334,7 +341,7 @@
                                         <rect key="frame" x="0.0" y="28" width="293" height="68"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eOG-ME-1uH" id="tHD-d2-HdN">
-                                            <frame key="frameInset" width="293" height="67"/>
+                                            <frame key="frameInset" width="293" height="67.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="ULf-Ho-Ie0">
@@ -436,9 +443,9 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="o2l-wA-MLC"/>
-        <segue reference="LtG-Hg-hV8"/>
+        <segue reference="GTH-qu-dQc"/>
         <segue reference="jkQ-AY-swS"/>
+        <segue reference="LtG-Hg-hV8"/>
         <segue reference="G91-qw-VxF"/>
     </inferredMetricsTieBreakers>
 </document>
