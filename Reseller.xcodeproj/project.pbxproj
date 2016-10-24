@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3136399EE9ACD41E6B4A2859 /* libPods-Reseller.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F056EF83B7DE81DB9BB143 /* libPods-Reseller.a */; };
+		E23ED1BB1DBE4E5E002BBD8A /* AddBranchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23ED1BA1DBE4E5E002BBD8A /* AddBranchViewController.swift */; };
 		E259693C1DB90CF600CCF7E8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E259693B1DB90CF600CCF7E8 /* MenuViewController.swift */; };
 		E2BEB4D21DB90E8A00F8764A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BEB4D11DB90E8A00F8764A /* BaseViewController.swift */; };
 		E2BEB4D41DB90EFE00F8764A /* ResellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BEB4D31DB90EFE00F8764A /* ResellerViewController.swift */; };
@@ -25,6 +26,7 @@
 		1A18585013C1CA63EE4570BE /* Pods-Reseller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reseller.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reseller/Pods-Reseller.debug.xcconfig"; sourceTree = "<group>"; };
 		44F056EF83B7DE81DB9BB143 /* libPods-Reseller.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reseller.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF022726E1384990615004AC /* Pods-Reseller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reseller.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reseller/Pods-Reseller.release.xcconfig"; sourceTree = "<group>"; };
+		E23ED1BA1DBE4E5E002BBD8A /* AddBranchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBranchViewController.swift; sourceTree = "<group>"; };
 		E259693B1DB90CF600CCF7E8 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		E2BEB4D11DB90E8A00F8764A /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E2BEB4D31DB90EFE00F8764A /* ResellerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResellerViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				E2BEB4DA1DBCDA0000F8764A /* Reseller */,
 				E259693B1DB90CF600CCF7E8 /* MenuViewController.swift */,
 				E2BEB4D71DBBA72D00F8764A /* DistributorViewController.swift */,
+				E23ED1BA1DBE4E5E002BBD8A /* AddBranchViewController.swift */,
 				E2BEB4D11DB90E8A00F8764A /* BaseViewController.swift */,
 				E83C1C961DB5144400CA7221 /* SignInViewController.swift */,
 				E2BEB4D31DB90EFE00F8764A /* ResellerViewController.swift */,
@@ -247,6 +250,7 @@
 			files = (
 				E2BEB4D81DBBA72D00F8764A /* DistributorViewController.swift in Sources */,
 				E259693C1DB90CF600CCF7E8 /* MenuViewController.swift in Sources */,
+				E23ED1BB1DBE4E5E002BBD8A /* AddBranchViewController.swift in Sources */,
 				E2BEB4D61DB90F9A00F8764A /* ShoppingCartViewController.swift in Sources */,
 				E83C1C851DB4CE2E00CA7221 /* AppDelegate.swift in Sources */,
 				E2BEB4D41DB90EFE00F8764A /* ResellerViewController.swift in Sources */,

@@ -29,7 +29,7 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         print("View Controller is : \(topViewController) \n", terminator: "")
         switch(index){
         case 0:
-            print("Reseller\n", terminator: "")
+            print("Order\n", terminator: "")
             
             self.openViewControllerBasedOnIdentifier("ResellerViewController")
             
@@ -41,7 +41,19 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
             
             break
         case 2:
-            print("Log In\n", terminator: "")
+            print("Notifications\n", terminator: "")
+            
+            self.openViewControllerBasedOnIdentifier("ResellerViewController")
+            
+            break
+        case 3:
+            print("History\n", terminator: "")
+            
+            self.openViewControllerBasedOnIdentifier("ShoppingCartViewController")
+            
+            break
+        case 4:
+            print("Log Out\n", terminator: "")
             
             self.openViewControllerBasedOnIdentifier("SignInViewController")
             
